@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тест на фразеологизмы</title>
+    <link rel="stylesheet" href="/css/fortests.css">
+    <link rel="icon" href="/img/emblem.jpg" type="image/jpg">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Тест по атому</h1>
+        <div id="question-container">
+            <div class="question" id="question">Вешать лапшу на уши</div>
+            <div class="answers">
+                <label class="answer" data-answer="false">Беззаботно отдыхать</label>
+                <label class="answer" data-answer="true">Обманывать, вводить в заблуждение</label>
+                <label class="answer" data-answer="false">Нервничать и переживать</label>
+            </div>
+            <button onclick="nextQuestion()">Далее</button>
+        </div>
+
+        <div id="result-container" class="hidden">
+            <div class="result" id="result-text"></div>
+            <button class="retry-btn" onclick="retryTest()">Попробовать снова</button>
+            <button class="exit" onclick="window.location.href='index.html';">Выход</button>
+            <button class="save" onclick="window.location.href='index.html';">Завершить курс</button>
+ 
+        </div>
+    </div>
+
+    <script>
+        const questions = [
+            {
+                question: "Что такое атом?",
+                answers: [
+                    { text: "Самая малая частица вещества, сохраняющая все его химические свойства", correct: true },
+                    { text: "Элементарная частица, составляющая молекулу", correct: false },
+                    { text: "Частица, которая может существовать только в вакууме", correct: false }
+                ]
+            },
+            {
+                question: "Какая частичка атома имеет положительный заряд?",
+                answers: [
+                    { text: "Электрон", correct: false },
+                    { text: "Протон", correct: true },
+                    { text: "Нейтрон", correct: false }
+                ]
+            },
+            {
+                question: "Как называется область, где находятся электроны в атоме?",
+                answers: [
+                    { text: "Орбиталь", correct: true },
+                    { text: "Протонная зона", correct: false },
+                    { text: "Нейтронный слой", correct: false }
+                ]
+            },
+            {
+                question: "Какое из утверждений верно для нейтронов в атоме?",
+                answers: [
+                    { text: "Нейтроны имеют отрицательный заряд", correct: false },
+                    { text: "Нейтроны не имеют заряда", correct: true },
+                    { text: "Нейтроны имеют положительный заряд", correct: false }
+                ]
+            },
+            {
+                question: "Как называется центральная часть атома, содержащая протоны и нейтроны?",
+                answers: [
+                    { text: "Ядро", correct: true },
+                    { text: "Оболочка", correct: false },
+                    { text: "Орбиталь", correct: false }
+                ]
+            }
+        ];
+
+ 
+    </script>
+    <script src="/js/tasks.js"></script>
+</body>
+</html>

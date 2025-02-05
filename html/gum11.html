@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тест на фразеологизмы</title>
+    <link rel="stylesheet" href="/css/fortests.css">
+    <link rel="icon" href="/img/emblem.jpg" type="image/jpg">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Тест по коллективизации</h1>
+        <div id="question-container">
+            <div class="question" id="question">Вешать лапшу на уши</div>
+            <div class="answers">
+                <label class="answer" data-answer="false">Беззаботно отдыхать</label>
+                <label class="answer" data-answer="true">Обманывать, вводить в заблуждение</label>
+                <label class="answer" data-answer="false">Нервничать и переживать</label>
+            </div>
+            <button onclick="nextQuestion()">Далее</button>
+        </div>
+
+        <div id="result-container" class="hidden">
+            <div class="result" id="result-text"></div>
+            <button class="retry-btn" onclick="retryTest()">Попробовать снова</button>
+            <button class="exit" onclick="window.location.href='index.html';">Выход</button>
+            <button class="save" onclick="window.location.href='index.html';">Завершить курс</button>
+ 
+        </div>
+    </div>
+
+    <script>
+const questions = [
+    {
+        question: "В каком году началась коллективизация в СССР?",
+        answers: [
+            { text: "1927", correct: false },
+            { text: "1929", correct: true },
+            { text: "1932", correct: false }
+        ]
+    },
+    {
+        question: "Какой метод использовался при коллективизации для принудительного вступления крестьян в колхозы?",
+        answers: [
+            { text: "Личное согласие", correct: false },
+            { text: "Репрессии и насилие", correct: true },
+            { text: "Моральное убеждение", correct: false }
+        ]
+    },
+    {
+        question: "Что стало основным элементом коллективизации в сельском хозяйстве СССР?",
+        answers: [
+            { text: "Приватизация земель", correct: false },
+            { text: "Коллективные хозяйства – колхозы", correct: true },
+            { text: "Индивидуальные фермерские хозяйства", correct: false }
+        ]
+    },
+    {
+        question: "Кто был инициатором политики коллективизации в СССР?",
+        answers: [
+            { text: "Леонид Брежнев", correct: false },
+            { text: "Иосиф Сталин", correct: true },
+            { text: "Никита Хрущёв", correct: false }
+        ]
+    },
+    {
+        question: "Какое из событий связано с коллективизацией?",
+        answers: [
+            { text: "Голод 1932–1933 годов", correct: true },
+            { text: "Русская революция 1917 года", correct: false },
+            { text: "Великая Отечественная война", correct: false }
+        ]
+    }
+];
+
+
+       
+    </script>
+    <script src="/js/tasks.js"></script>
+</body>
+</html>

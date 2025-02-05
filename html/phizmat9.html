@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тест на фразеологизмы</title>
+    <link rel="stylesheet" href="/css/fortests.css">
+    <link rel="icon" href="/img/emblem.jpg" type="image/jpg">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Тест на площадь подобных фигур</h1>
+        <div id="question-container">
+            <div class="question" id="question">Вешать лапшу на уши</div>
+            <div class="answers">
+                <label class="answer" data-answer="false">Беззаботно отдыхать</label>
+                <label class="answer" data-answer="true">Обманывать, вводить в заблуждение</label>
+                <label class="answer" data-answer="false">Нервничать и переживать</label>
+            </div>
+            <button onclick="nextQuestion()">Далее</button>
+        </div>
+
+        <div id="result-container" class="hidden">
+            <div class="result" id="result-text"></div>
+            <button class="retry-btn" onclick="retryTest()">Попробовать снова</button>
+            <button class="exit" onclick="window.location.href='index.html';">Выход</button>
+            <button class="save" onclick="window.location.href='index.html';">Завершить курс</button>
+ 
+        </div>
+    </div>
+ 
+    <script>
+         const questions = [
+    {
+        question: "Как изменяется площадь подобной фигуры при увеличении линейных размеров в n раз?",
+        answers: [
+            { text: "Увеличивается в n раз", correct: false },
+            { text: "Увеличивается в n² раз", correct: true },
+            { text: "Остается неизменной", correct: false }
+        ]
+    },
+    {
+        question: "Если одна фигура подобна другой, и их линейные размеры увеличены в 3 раза, во сколько раз изменится площадь?",
+        answers: [
+            { text: "В 3 раза", correct: false },
+            { text: "В 6 раз", correct: false },
+            { text: "В 9 раз", correct: true }
+        ]
+    },
+    {
+        question: "Какое соотношение площади двух подобных треугольников, если отношение их сторон равно 4?",
+        answers: [
+            { text: "4:1", correct: false },
+            { text: "16:1", correct: true },
+            { text: "2:1", correct: false }
+        ]
+    },
+    {
+        question: "Если две фигуры подобны, то их площади будут пропорциональны...",
+        answers: [
+            { text: "Кубам соответствующих линейных размеров", correct: false },
+            { text: "Квадратам соответствующих линейных размеров", correct: true },
+            { text: "Прямым линейным величинам", correct: false }
+        ]
+    },
+    {
+        question: "Если одна фигура подобна другой, и отношение их линейных размеров равно 5, то во сколько раз больше площадь первой фигуры?",
+        answers: [
+            { text: "5", correct: false },
+            { text: "25", correct: true },
+            { text: "50", correct: false }
+        ]
+    }
+];
+
+
+    </script>
+        <script src="/js/tasks.js"></script>
+
+</body>
+</html>

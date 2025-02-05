@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <link rel="stylesheet" href="/css/style.css">
+        <link rel="icon" href="/img/emblem.jpg" type="image/jpg">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    </head>
+    <body style="  background-color: #f9f9f9;">
+        <div class="header">
+            <button class="menu-button" id="menu-button" onclick="toggleMenu()">
+                <svg style= "z-index: 4" class="ham6" viewBox="0 0 100 100" width="80" onclick="this.classList.toggle('active')">
+                    <path class="top" d="m 30,33 h 40 c 13.100415,0 14.380204,31.80258 6.899646,33.421777 -24.612039,5.327373 9.016154,-52.337577 -12.75751,-30.563913 l -28.284272,28.284272" />
+                    <path class="middle" d="m 70,50 c 0,0 -32.213436,0 -40,0 -7.786564,0 -6.428571,-4.640244 -6.428571,-8.571429 0,-5.895471 6.073743,-11.783399 12.286435,-5.570707 6.212692,6.212692 28.284272,28.284272" />
+                    <path class="bottom" d="m 69.575405,67.073826 h -40 c -13.100415,0 -14.380204,-31.80258 -6.899646,-33.421777 24.612039,-5.327373 -9.016154,52.337577 12.75751,30.563913 l 28.284272,-28.284272" />
+                </svg>
+            </button>           
+            <div class="side-menu" id="sideMenu">
+                <span class="close-btn" onclick="toggleMenu()">✖</span>
+                <div class="menu-header" id="menuHeader">Войти</div>
+                <ul class="menu-list">
+                    <a href="onas.html"><li>О нас</li></a>
+                    <a href="obuchenie.html"><li>Курсы</li></a>
+                    <a href="personal.html"><li>Персональные уроки</li></a>
+                    <a href="personal.html"><li>Выложить урок</li></a>
+                    <a href="kalendar.html"><li>Календарь</li></a>
+                    <a href="kontakt.html"><li>Контакты</li></a>
+                    <a href="novost.html"><li>Новости</li></a>
+                    <a href="gu.html"><li>ИИ</li></a>
+                    <a href="https://github.com/Qoziwe/28PanfilovHeroes"><li>Другие проекты</li></a>                  
+                </ul>
+                <div class="stats">
+                    <div id="vce">Решенные задания: <span id="totalAttempts">0</span></div>
+                    <div id="resh">Пройденные задачи: <span id="correctAnswers">0</span></div>
+                    <div>КД: <span id="kdRatio">0.00</span></div>
+                </div>
+            </div>
+ 
+          <nav> 
+           <ul class="navig_list"> 
+            <li class="l0">
+                <a href="index.html" class="menu-link" style="width: 12em;">главная страница</a>
+            </li>
+            <li class="l1">
+                <a href="/html/onas.html" class="menu-link">О нас</a>
+            </li>
+            <li class="l2" style="width: 12vw; " >
+                <a   class="menu-link-active" style="width: 12vw; ">Обучение</a>
+                <div class="dropdownobuch">
+                    <a href="obuchenie.html"  >Курсы</a>
+                    <a href="personal.html">Персональные уроки</a>
+                </div>
+            </li>
+            <li class="l3"> 
+                <a href="kontakt.html" class="menu-link">контакты</a>
+            </li>
+            <li class="l4">
+                <a href="novost.html" class="menu-link">Новости</a>
+            </li>
+            <li class="l5">
+                <div class="cont_cart">
+                    <button class="login-btn" onclick="window.location.href='auten.html'" id="loginButton">
+                        <img src="img/avatar-nogender.png" alt="Аватар" class="avatar">
+                        <span class="login-text">Войти</span>
+                    </button>
+                    <div class="carta">
+                        <img src="img/podarok.png" alt="podarok" class="pod">
+                        <p class="podzavxod">За вход вы получите подарок!</p>
+                      </div>
+                </div>
+            </li>
+            </ul>
+          </nav>
+     
+         </div>
+    <header class="main-header" style="display: flex; justify-content: center; margin: 30px 0px;">
+        <h1>Александр Сергеевич Пушкин</h1>
+    </header>
+    <div class="content-wrapper">
+        <section>
+            <h2  class="section-title">1. Биография</h2>
+            <p style="font-weight: 500;"><strong>Александр Пушкин</strong> родился 6 июня 1799 года в Москве в дворянской семье. В 1811 году поступил в Царскосельский лицей, где начал писать первые стихи. После окончания лицея служил в государственных учреждениях, но основное внимание уделял литературе. Пушкин трагически погиб на дуэли 29 января 1837 года в Санкт-Петербурге.</p>
+        </section>
+        <section>
+            <h2 class="section-title">2. Основные произведения</h2>
+            <ul class="info-list"></ul>
+                <li class="special"><strong>"Евгений Онегин"</strong> — роман в стихах.</li>
+                <li class="special"><strong>"Руслан и Людмила"</strong> — поэма, основанная на русских сказках.</li>
+                <li class="special"><strong>"Борис Годунов"</strong> — историческая драма.</li>
+                <li class="special"><strong>"Пиковая дама"</strong> — повесть о страсти к азартным играм.</li>
+                <li class="special"><strong>"Капитанская дочка"</strong> — повесть о Пугачёвском восстании.</li>
+            </ul>
+        </section>
+        <section>
+            <h2 class="section-title">3. Влияние на русский язык</h2>
+            <p>
+            Пушкин создал современный русский литературный язык, объединив книжный и разговорный стили. Он ввел в оборот новые слова и выражения, сделал синтаксис проще и естественнее. Многие его фразы стали крылатыми: «Ай да Пушкин!», «Мы все учились понемногу». Его стиль оказал влияние на всю русскую литературу, сделав язык гибким и выразительным.</p>
+        </section>
+        <section>
+            <h2 class="section-title">4. Видео </h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/37JPBLlyT4c" frameborder="0" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Iv1DN_I7Tzo" frameborder="0" allowfullscreen></iframe>
+        </section>
+        <section>
+            <h2 class="section-title" style="margin-top: 20px;">5. Задания для закрепления</h2>
+            <ul class="info-list">
+                <li>Назовите основные этапы жизни Александра Пушкина.</li>
+                <li>Какие произведения Пушкина вы читали? Поделитесь впечатлениями.</li>
+                <li>Приведите примеры фразеологизмов из произведений Пушкина.</li>
+            </ul>
+        </section>
+        <a href="gum10.html">
+            <button class="proititest"  >Пройти тест</button>
+        </a>
+         
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+    </div>
+    <script src="/js/sidemenu.js"></script>
+    <script src="/js/count.js"></script>
+    <script src="/js/registr.js"></script>
+</body>
+</html>

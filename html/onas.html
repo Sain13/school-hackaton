@@ -1,0 +1,162 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="/css/style.css">
+        <link rel="icon" href="/img/emblem.jpg" type="image/jpg">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+ 
+    </head>
+    <body>
+         <div class="header">
+            <button class="menu-button" id="menu-button" onclick="toggleMenu()">
+                <svg style= "z-index: 4" class="ham6" viewBox="0 0 100 100" width="80" onclick="this.classList.toggle('active')">
+                    <path class="top" d="m 30,33 h 40 c 13.100415,0 14.380204,31.80258 6.899646,33.421777 -24.612039,5.327373 9.016154,-52.337577 -12.75751,-30.563913 l -28.284272,28.284272" />
+                    <path class="middle" d="m 70,50 c 0,0 -32.213436,0 -40,0 -7.786564,0 -6.428571,-4.640244 -6.428571,-8.571429 0,-5.895471 6.073743,-11.783399 12.286435,-5.570707 6.212692,6.212692 28.284272,28.284272" />
+                    <path class="bottom" d="m 69.575405,67.073826 h -40 c -13.100415,0 -14.380204,-31.80258 -6.899646,-33.421777 24.612039,-5.327373 -9.016154,52.337577 12.75751,30.563913 l 28.284272,-28.284272" />
+                </svg>
+            </button>           
+            <div class="side-menu" id="sideMenu">
+                <span class="close-btn" onclick="toggleMenu()">✖</span>
+                <div class="menu-header" id="menuHeader">Войти</div>
+                <ul class="menu-list">
+                    <a href="/html/onas.html"><li>О нас</li></a>
+                    <a href="/html/obuchenie.html"><li>Курсы</li></a>
+                    <a href="/html/personal.html"><li>Персональные уроки</li></a>
+                    <a href="/html/personal.html"><li>Выложить урок</li></a>
+                    <a href="/html/kalendar.html"><li>Календарь</li></a>
+                    <a href="/html/kontakt.html"><li>Контакты</li></a>
+                    <a href="/html/novost.html"><li>Новости</li></a>
+                    <a href="/html/gu.html"><li>ИИ</li></a>
+                    <a href="https://github.com/Qoziwe/28PanfilovHeroes"><li>Другие проекты</li></a>                  
+                </ul>
+                <div class="stats">
+                    <div id="vce">Решенные задания: <span id="totalAttempts">0</span></div>
+                    <div id="resh">Пройденные задачи: <span id="correctAnswers">0</span></div>
+                    <div>КД: <span id="kdRatio">0.00</span></div>
+                </div>
+            </div>
+          <nav> 
+           <ul class="navig_list"> 
+            <li class="l0">
+                <a href="/html/index.html" class="menu-link " style="width: 12em; ">главная страница</a>
+            </li>
+            <li class="l1">
+                <a href="/html/onas.html" class="menu-link-active">О нас</a>
+            </li>
+            <li class="l2" style="width: 12vw; " >
+                <a   class="menu-link" style="width: 12vw; ">Обучение</a>
+                <div class="dropdownobuch">
+                    <a href="/html/obuchenie.html"  >Курсы</a>
+                    <a href="/html/personal.html">Персональные уроки</a>
+                </div>
+            </li>
+            <li class="l3"> 
+                <a href="/html/kontakt.html" class="menu-link">контакты</a>
+            </li>
+            <li class="l4">
+                <a href="/html/novost.html" class="menu-link">Новости</a>
+            </li>
+            <li class="l5">
+                <div class="cont_cart">
+                    <button class="login-btn" onclick="window.location.href='auten.html'" id="loginButton">
+                        <img src="/img/avatar-nogender.png" alt="Аватар" class="avatar">
+                        <span class="login-text">Войти</span>
+                    </button>
+                    <div class="carta">
+                        <img src="/img/podarok.png" alt="podarok" class="pod">
+                        <p class="podzavxod">За вход вы получите подарок!</p>
+                      </div>
+                </div>
+            </li>
+            </ul>
+          </nav>    
+         </div>
+         <div class="content-wrapper">   
+            <button id="scrollToTopBtn"><img src="/img/up.png" alt=""></button> 
+            <div class="iakorscrl">
+                <a href="#history" class="current">История</a>
+                <a href="#goal">Цели</a>
+                <a href="#achive"  >Достижения</a>
+                <a href="#foundation" >Поступление</a>
+                <a href="#administration"  >Администрация</a>
+            </div>
+ 
+            <h1>История школы <img src="/img/time.png" alt="" style="left:16vw"></h1>
+            <div class="history" id="history">
+                <p  >Казахстанско-Российская специализированная школа-лицей №54 имени И.В. Панфилова в Алматы имеет богатую историю и традиции. В 1992 году на базе школы были открыты первые гимназические классы, а в 1994 году она была переименована в "Школу-гимназию №54 им. И.В. Панфилова" решением аттестационной комиссии ГУОД г. Алма-Аты №9 от 02-12-1994. В школе был организован физико-математический профиль обучения, а также открыты кабинеты танцев, шахмат и химическая лаборатория. 
+
+                    В 1995 году гимназия стала победителем конкурса в рамках программы "Обновление гуманитарного образования", проводимого Фондом "Сорос – Казахстан". 
+         
+                    В 2000 году школа была переименована в КГУ "Казахстанско-Российская специализированная школа-лицей №54 им. И.В. Панфилова". 
+           
+                    Сегодня школа продолжает развивать свои образовательные программы, сочетая традиционные методы обучения с инновационными подходами, обеспечивая своим ученикам качественное образование и всестороннее развитие.
+                </p>
+            </div>
+            <div class="image-container"><img src="/img/school.jpg" alt=""></div>
+            <div id="goal" style="position: relative;"><h1>Цели <img src="/img/blast.png" style="width: 70px;
+                height: 60px;
+                position: absolute;
+                left: 5.4vw;
+                bottom:-0.7vw"></h1>
+            <p>Школьный портал разработан для создания современной цифровой среды, обеспечивающей удобный доступ к образовательным ресурсам, организационным инструментам и инновационным технологиям. Он объединяет в себе функционал для эффективного планирования учебного процесса, включая встроенный календарь с возможностью добавления индивидуальных пометок, напоминаний о контрольных работах, школьных мероприятиях и хакатонах.  
+
+                На платформе представлены интерактивные курсы по физико-математическим и IT-дисциплинам, позволяющие учащимся осваивать сложные темы в удобном темпе. Для персонализированного обучения доступны индивидуальные уроки с преподавателями и наставниками, а также специализированные модули по программированию, олимпиадной математике и научным исследованиям.  
+                
+                Интеграция искусственного интеллекта расширяет возможности портала, позволяя анализировать прогресс учеников, предлагать персонализированные рекомендации по обучению и автоматически проверять тестовые задания. Встроенные цифровые инструменты обеспечивают удобное взаимодействие между учениками, педагогами и администрацией, создавая инновационную образовательную среду, способствующую академическому и личностному развитию.</p></div>
+            <div id="achive"><h1>Достижения<img src="/img/kubok.png" alt=""></h1>
+            <p>
+                Казахстанско-Российская специализированная школа-лицей №54 имени И.В. Панфилова гордится своими выдающимися достижениями в области образования и спорта. Наши выпускники неоднократно занимали призовые места на различных олимпиадах и конкурсах, демонстрируя высокий уровень подготовки по физико-математическим и IT-дисциплинам. Кроме того, учащиеся школы успешно выступают на спортивных соревнованиях, включая турниры по волейболу, подтверждая свое мастерство и командный дух.
+                
+                Школа активно поддерживает участие учеников в хакатонах и научно-исследовательских проектах, способствуя развитию их творческого потенциала и навыков решения сложных задач. Благодаря высококвалифицированному педагогическому составу и современным методикам обучения, наши учащиеся достигают значительных успехов, внося вклад в престиж школы на городском и республиканском уровнях.
+                
+                Мы гордимся нашими учениками и выпускниками, чьи достижения являются свидетельством эффективности образовательного процесса и вдохновляют новые поколения на покорение вершин знаний и спорта. <a href="https://ru.54.alschool.kz/shkolnikam/oushylar-zhetstkter/"><strong>Источник</strong></a></p></div>
+                <div class="gallery">
+                    <img src="/img/sc1.jpg" alt="Достижение 1">
+                    <img src="/img/sc2.jpg" alt="Достижение 2">
+                    <img src="/img/sc3.jpg" alt="Достижение 3">
+                    <img src="/img/sc4.jpg" alt="Достижение 4">
+                </div>
+            <div id="foundation"><h1>Поступление <img src="/img/boy.png" alt="" style="left: 13vw;"></h1>
+            <p>Поступление в Казахстанско-Российскую специализированную школу-лицей № 54 имени И. В. Панфилова — это важный шаг на пути к качественному образованию. Школа, основанная в 1938 году, имеет богатую историю и традиции. В 1942 году ей было присвоено имя Героя Советского Союза генерал-майора Ивана Васильевича Панфилова. 
+ 
+                
+                Для поступления в 5-й класс на 2024–2025 учебный год необходимо пройти конкурсный отбор. Вступительные экзамены включают задания по математике и на логическое мышление. Родителям детей, прошедших отбор, рекомендуется обратиться к секретарю школы-лицея для получения талона прибытия. 
+ 
+                
+                Школа-лицей предлагает углубленное изучение математики, физики и радиотехники, а также развивает эстетический профиль. Сотрудничество с различными университетами и компаниями в области информационных технологий открывает перед учащимися широкие возможности для развития. 
+ 
+                
+                Поступление в КРСШЛ № 54 — это возможность стать частью сообщества, стремящегося к высоким академическим стандартам и всестороннему развитию личности. <a href="http://ru.54.alschool.kz/main/805-vnimanie-informacija-po-postupleniju-v-5j-klass-na-2024-2025-uchebnyj.html"><strong>Узнать больше</strong></a></p></div>
+            <h1>Администрация<img src="/img/women.png" alt="" style="left: 16vw;"></h1>
+            <div id="administration"><p>Администрация КРСШЛ №54 занимается организацией учебного процесса, воспитательной работой и развитием школы. Директор и его команда следят за качеством образования, безопасностью, проведением мероприятий и благоустройством. Внедряются новые технологии, поддерживаются кружки и секции, обеспечивается комфортная среда для учеников. Важна обратная связь с родителями и учениками, регулярно проходят встречи и консультации. Задать вопросы директору школы можно <a href="http://blog.alschool.kz/ru/blog/1/230/"><strong>здесь</strong></a>.</p></div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <script src="/js/script.js" > </script>
+        <script src="/js/registr.js"></script>
+        <script src="/js/sidemenu.js"></script>
+        <script>const scrollToTopBtn = document.getElementById('scrollToTopBtn');
+            window.onscroll = function() {
+              if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+                scrollToTopBtn.style.display = "flex"; 
+                scrollToTopBtn.style.transform = "translateY(0)";  
+              } else {
+                scrollToTopBtn.style.display = "none"; 
+              }
+            };
+            
+            // Добавляем обработчик события на клик по кнопке
+            scrollToTopBtn.addEventListener('click', function () {
+              // Плавно прокручиваем страницу до верха
+              window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+              });
+            });</script>
+            <script src="/js/count.js"></script>
+    </body>
+</html>

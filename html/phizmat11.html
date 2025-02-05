@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тест на фразеологизмы</title>
+    <link rel="stylesheet" href="/css/fortests.css">
+    <link rel="icon" href="/img/emblem.jpg" type="image/jpg">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Тест по закону Ома</h1>
+        <div id="question-container">
+            <div class="question" id="question">Вешать лапшу на уши</div>
+            <div class="answers">
+                <label class="answer" data-answer="false">Беззаботно отдыхать</label>
+                <label class="answer" data-answer="true">Обманывать, вводить в заблуждение</label>
+                <label class="answer" data-answer="false">Нервничать и переживать</label>
+            </div>
+            <button onclick="nextQuestion()">Далее</button>
+        </div>
+
+        <div id="result-container" class="hidden">
+            <div class="result" id="result-text"></div>
+            <button class="retry-btn" onclick="retryTest()">Попробовать снова</button>
+            <button class="exit" onclick="window.location.href='index.html';">Выход</button>
+            <button class="save" onclick="window.location.href='index.html';">Завершить курс</button>
+ 
+        </div>
+    </div>
+
+    <script>
+        const questions = [
+            {
+                question: "Что такое закон Ома для участка цепи?",
+                answers: [
+                    { text: "I = U / R", correct: true },
+                    { text: "I = R / U", correct: false },
+                    { text: "U = R * I", correct: false }
+                ]
+            },
+            {
+                question: "Какое физическое значение имеет сопротивление в электрической цепи?",
+                answers: [
+                    { text: "Сопротивление препятствует току", correct: true },
+                    { text: "Сопротивление увеличивает напряжение", correct: false },
+                    { text: "Сопротивление влияет на мощность", correct: false }
+                ]
+            },
+            {
+                question: "Какая единица измерения силы тока?",
+                answers: [
+                    { text: "Вольт", correct: false },
+                    { text: "Ом", correct: false },
+                    { text: "Ампер", correct: true }
+                ]
+            },
+            {
+                question: "Что представляет собой цепь, соединённую последовательно?",
+                answers: [
+                    { text: "Все элементы цепи соединены вдоль одной линии", correct: true },
+                    { text: "Элементы цепи соединены параллельно", correct: false },
+                    { text: "Ток течет через каждый элемент цепи отдельно", correct: false }
+                ]
+            },
+            {
+                question: "Что такое электрическая мощность?",
+                answers: [
+                    { text: "P = I * U", correct: true },
+                    { text: "P = U / I", correct: false },
+                    { text: "P = R * I", correct: false }
+                ]
+            }
+        ];
+
+      
+    </script>
+    <script src="/js/tasks.js"></script>
+</body>
+</html>

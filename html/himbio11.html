@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тест на фразеологизмы</title>
+    <link rel="stylesheet" href="/css/fortests.css">
+    <link rel="icon" href="/img/emblem.jpg" type="image/jpg">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Тест по генетике и наследственности</h1>
+        <div id="question-container">
+            <div class="question" id="question">Вешать лапшу на уши</div>
+            <div class="answers">
+                <label class="answer" data-answer="false">Беззаботно отдыхать</label>
+                <label class="answer" data-answer="true">Обманывать, вводить в заблуждение</label>
+                <label class="answer" data-answer="false">Нервничать и переживать</label>
+            </div>
+            <button onclick="nextQuestion()">Далее</button>
+        </div>
+
+        <div id="result-container" class="hidden">
+            <div class="result" id="result-text"></div>
+            <button class="retry-btn" onclick="retryTest()">Попробовать снова</button>
+            <button class="exit" onclick="window.location.href='index.html';">Выход</button>
+            <button class="save" onclick="window.location.href='index.html';">Завершить курс</button>
+ 
+        </div>
+    </div>
+
+    <script>
+        const questions = [
+            {
+                question: "Что такое генетика?",
+                answers: [
+                    { text: "Наука о наследственности и изменчивости организмов", correct: true },
+                    { text: "Наука о биологических особенностях растений", correct: false },
+                    { text: "Наука о процессах фотосинтеза", correct: false }
+                ]
+            },
+            {
+                question: "Что такое гены?",
+                answers: [
+                    { text: "Единицы наследственности, определяющие признаки организма", correct: true },
+                    { text: "Частицы, регулирующие обмен веществ в клетке", correct: false },
+                    { text: "Частицы, отвечающие за рост клеток", correct: false }
+                ]
+            },
+            {
+                question: "Какой закон наследования предложил Грегор Мендель?",
+                answers: [
+                    { text: "Закон независимого распределения признаков", correct: true },
+                    { text: "Закон сцепленного наследования", correct: false },
+                    { text: "Закон мозаичности", correct: false }
+                ]
+            },
+            {
+                question: "Как называется процесс, в котором из одной диплоидной клетки образуются четыре гаплоидные клетки?",
+                answers: [
+                    { text: "Митоз", correct: false },
+                    { text: "Мейоз", correct: true },
+                    { text: "Оплодотворение", correct: false }
+                ]
+            },
+            {
+                question: "Что такое доминантный признак?",
+                answers: [
+                    { text: "Признак, который проявляется только в гомозиготном состоянии", correct: false },
+                    { text: "Признак, который проявляется в гетерозиготном и гомозиготном состоянии", correct: true },
+                    { text: "Признак, который не проявляется в гомозиготном состоянии", correct: false }
+                ]
+            }
+        ];
+
+ 
+    </script>
+    <script src="/js/tasks.js"></script>
+</body>
+</html>

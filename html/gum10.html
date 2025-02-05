@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тест на фразеологизмы</title>
+    <link rel="stylesheet" href="/css/fortests.css">
+    <link rel="icon" href="/img/emblem.jpg" type="image/jpg">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Тест по творчеству Пушкина</h1>
+        <div id="question-container">
+            <div class="question" id="question">Вешать лапшу на уши</div>
+            <div class="answers">
+                <label class="answer" data-answer="false">Беззаботно отдыхать</label>
+                <label class="answer" data-answer="true">Обманывать, вводить в заблуждение</label>
+                <label class="answer" data-answer="false">Нервничать и переживать</label>
+            </div>
+            <button onclick="nextQuestion()">Далее</button>
+        </div>
+
+        <div id="result-container" class="hidden">
+            <div class="result" id="result-text"></div>
+            <button class="retry-btn" onclick="retryTest()">Попробовать снова</button>
+            <button class="exit" onclick="window.location.href='index.html';">Выход</button>
+            <button class="save" onclick="window.location.href='index.html';">Завершить курс</button>
+ 
+        </div>
+    </div>
+
+    <script>
+        const questions = [
+            {
+                question: "В каком году родился А.С. Пушкин?",
+                answers: [
+                    { text: "1799", correct: true },
+                    { text: "1801", correct: false },
+                    { text: "1812", correct: false }
+                ]
+            },
+            {
+                question: "Какое произведение Пушкина считается первым русским романом в стихах?",
+                answers: [
+                    { text: "Руслан и Людмила", correct: false },
+                    { text: "Евгений Онегин", correct: true },
+                    { text: "Капитанская дочка", correct: false }
+                ]
+            },
+            {
+                question: "К какому литературному направлению относится большинство произведений Пушкина?",
+                answers: [
+                    { text: "Романтизм", correct: false },
+                    { text: "Классицизм", correct: false },
+                    { text: "Реализм", correct: true }
+                ]
+            }
+        ];
+
+    </script>
+    <script src="/js/tasks.js"></script>
+</body>
+</html>

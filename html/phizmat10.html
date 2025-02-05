@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тест на фразеологизмы</title>
+    <link rel="stylesheet" href="/css/fortests.css">
+    <link rel="icon" href="/img/emblem.jpg" type="image/jpg">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Тест по тригонометрии</h1>
+        <div id="question-container">
+            <div class="question" id="question">Вешать лапшу на уши</div>
+            <div class="answers">
+                <label class="answer" data-answer="false">Беззаботно отдыхать</label>
+                <label class="answer" data-answer="true">Обманывать, вводить в заблуждение</label>
+                <label class="answer" data-answer="false">Нервничать и переживать</label>
+            </div>
+            <button onclick="nextQuestion()">Далее</button>
+        </div>
+
+        <div id="result-container" class="hidden">
+            <div class="result" id="result-text"></div>
+            <button class="retry-btn" onclick="retryTest()">Попробовать снова</button>
+            <button class="exit" onclick="window.location.href='index.html';">Выход</button>
+            <button class="save" onclick="window.location.href='index.html';">Завершить курс</button>
+ 
+        </div>
+    </div>
+
+    <script>
+            const questions = [
+        {
+            question: "Какое значение имеет синус угла 90°?",
+            answers: [
+                { text: "0", correct: false },
+                { text: "1", correct: true },
+                { text: "√2/2", correct: false }
+            ]
+        },
+        {
+            question: "Какое значение имеет косинус угла 0°?",
+            answers: [
+                { text: "0", correct: false },
+                { text: "1", correct: true },
+                { text: "-1", correct: false }
+            ]
+        },
+        {
+            question: "Какое соотношение определяет тангенс угла?",
+            answers: [
+                { text: "sin(θ) / cos(θ)", correct: true },
+                { text: "cos(θ) / sin(θ)", correct: false },
+                { text: "1 / cos(θ)", correct: false }
+            ]
+        },
+        {
+            question: "Какое значение имеет котангенс угла 45°?",
+            answers: [
+                { text: "1", correct: true },
+                { text: "√2", correct: false },
+                { text: "0", correct: false }
+            ]
+        },
+        {
+            question: "Какая тригонометрическая функция является обратной к синусу?",
+            answers: [
+                { text: "Косинус", correct: false },
+                { text: "Арксинус", correct: true },
+                { text: "Котангенс", correct: false }
+            ]
+        }
+    ];
+
+ 
+    </script>
+    <script src="/js/tasks.js"></script>
+</body>
+</html>

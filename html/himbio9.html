@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тест на фразеологизмы</title>
+    <link rel="stylesheet" href="/css/fortests.css">
+    <link rel="icon" href="/img/emblem.jpg" type="image/jpg">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Тест по митозу</h1>
+        <div id="question-container">
+            <div class="question" id="question">Вешать лапшу на уши</div>
+            <div class="answers">
+                <label class="answer" data-answer="false">Беззаботно отдыхать</label>
+                <label class="answer" data-answer="true">Обманывать, вводить в заблуждение</label>
+                <label class="answer" data-answer="false">Нервничать и переживать</label>
+            </div>
+            <button onclick="nextQuestion()">Далее</button>
+        </div>
+
+        <div id="result-container" class="hidden">
+            <div class="result" id="result-text"></div>
+            <button class="retry-btn" onclick="retryTest()" id="neproshel1">Попробовать снова</button>
+            <button class="exit" onclick="window.location.href='index.html';">Выход</button>
+            <button class="save" onclick="window.location.href='index.html';">Завершить курс</button>
+ 
+        </div>
+    </div>
+
+    <script>
+        const questions = [
+            {
+                question: "Что такое митоз?",
+                answers: [
+                    { text: "Процесс деления клетки, в результате которого образуются две идентичные дочерние клетки", correct: true },
+                    { text: "Процесс обмена генетическим материалом между клетками", correct: false },
+                    { text: "Процесс создания новых органелл клетки", correct: false }
+                ]
+            },
+            {
+                question: "Сколько стадий включает митоз?",
+                answers: [
+                    { text: "2", correct: false },
+                    { text: "4", correct: false },
+                    { text: "5", correct: true }
+                ]
+            },
+            {
+                question: "Какая стадия митоза характеризуется распадом ядерной оболочки?",
+                answers: [
+                    { text: "Метафаза", correct: false },
+                    { text: "Телофаза", correct: false },
+                    { text: "Профаза", correct: true }
+                ]
+            },
+            {
+                question: "Как называется стадия митоза, когда хромосомы выстраиваются по экватору клетки?",
+                answers: [
+                    { text: "Профаза", correct: false },
+                    { text: "Метафаза", correct: true },
+                    { text: "Анафаза", correct: false }
+                ]
+            },
+            {
+                question: "На какой стадии митоза происходит разделение центромеры и расхождение хроматид к полюсам клетки?",
+                answers: [
+                    { text: "Телофаза", correct: false },
+                    { text: "Анафаза", correct: true },
+                    { text: "Пропрефаза", correct: false }
+                ]
+            }
+        ];
+ 
+    </script>
+    <script src="/js/tasks.js"></script>
+</body>
+</html>
