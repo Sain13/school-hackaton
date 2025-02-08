@@ -62,7 +62,7 @@
             </li>
             <li class="l5">
                 <div class="cont_cart">
-                    <button class="login-btn"  id="loginButton">
+                    <button class="login-btn"  onclick="window.location.href='html/auten.html'" id="loginButton">
                         <img src="img/avatar-nogender.png" alt="Аватар" class="avatar">
                         <span class="login-text">Войти</span>
                     </button>
@@ -139,7 +139,7 @@
                     // Если текст отличается от "Войти", меняем текст кнопки и ссылку
                     if (userNameText !== "Войти" && userNameText !== "") {
                         startButton.textContent = "Личный кабинет";
-                        startButton.onclick = () => window.location.href = "html/kabinet.html"; // Устанавливаем правильный обработчик
+                        startButton.onclick = () => window.location.href = "../html/kabinet.html"; // Устанавливаем правильный обработчик
                     } else {
                         startButton.textContent = "Войти";
                         startButton.onclick = () => window.location.href = "html/auten.html";
