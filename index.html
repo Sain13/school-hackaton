@@ -62,7 +62,7 @@
             </li>
             <li class="l5">
                 <div class="cont_cart">
-                    <button class="login-btn" onclick="window.location.href='html/auten.html'" id="loginButton">
+                    <button class="login-btn"  id="loginButton">
                         <img src="img/avatar-nogender.png" alt="Аватар" class="avatar">
                         <span class="login-text">Войти</span>
                     </button>
@@ -132,6 +132,7 @@
             document.addEventListener("DOMContentLoaded", () => {
               const userNameElement = document.querySelector(".login-text");
               const startButton = document.getElementById("qw1");
+              startButton.onclick = 'html/auten.html';
           
               if (userNameElement && startButton) {
                   const userNameText = userNameElement.textContent.trim(); // Получаем текст из userName и удаляем лишние пробелы
