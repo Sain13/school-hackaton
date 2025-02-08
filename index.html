@@ -130,21 +130,23 @@
           <script src="js/registr.js"></script>
           <script>
             document.addEventListener("DOMContentLoaded", () => {
-              const userNameElement = document.querySelector(".login-text");
-              const startButton = document.getElementById("qw1");
-              startButton.onclick = 'html/auten.html';
-          
-              if (userNameElement && startButton) {
-                  const userNameText = userNameElement.textContent.trim(); // Получаем текст из userName и удаляем лишние пробелы
-          
-                  // Если текст отличается от "Войти", меняем текст кнопки и ссылку
-                  if (userNameText !== "Войти" && userNameText !== "") {
-                      startButton.textContent = "Личный кабинет";
-                      startButton.onclick = () => window.location.href = "../html/kabinet.html";
+                const userNameElement = document.querySelector(".login-text");
+                const startButton = document.getElementById("qw1");
 
-                  }  
-              }
+                if (userNameElement && startButton) {
+                    const userNameText = userNameElement.textContent.trim(); // Получаем текст без лишних пробелов
+
+                    // Если текст отличается от "Войти", меняем текст кнопки и ссылку
+                    if (userNameText !== "Войти" && userNameText !== "") {
+                        startButton.textContent = "Личный кабинет";
+                        startButton.onclick = () => window.location.href = "html/kabinet.html"; // Устанавливаем правильный обработчик
+                    } else {
+                        startButton.textContent = "Войти";
+                        startButton.onclick = () => window.location.href = "html/auten.html";
+                    }
+                }
             });
+
           </script>
           <script src="js/count.js">
          </script>
