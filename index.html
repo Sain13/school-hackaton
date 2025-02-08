@@ -139,7 +139,8 @@
                   // Если текст отличается от "Войти", меняем текст кнопки и ссылку
                   if (userNameText !== "Войти" && userNameText !== "") {
                       startButton.textContent = "Личный кабинет";
-                      startButton.onclick = "../html/kabinet.html"; // Устанавливаем ссылку на кабинет
+                      startButton.onclick = () => window.location.href = "../html/kabinet.html";
+
                   }  
               }
             });
