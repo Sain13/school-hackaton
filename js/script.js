@@ -40,17 +40,14 @@ function register() {
   if (name && password) {
       sessionStorage.setItem("username", name);
  
-      window.location.href = "index.html";  
+      window.location.href = "../index.html";  
  
   } else {
       alert("Заполните все поля!");
   }
 }
 
-function logout() {
-  sessionStorage.removeItem("username"); // Очищаем данные сессии
-  window.location.href = "login.html"; // Возвращаем пользователя на страницу входа
-}
+ 
 
 // При загрузке всего контента если пользователь ввел имя то он выведеться через функцию ниже
 window.onload = function() {
