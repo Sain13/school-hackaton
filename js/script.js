@@ -38,11 +38,14 @@ function register() {
  
   
   if (name && password) {
+    if(name.length()<=7){
       sessionStorage.setItem("username", name);
   
       window.location.href = "../index.html";  
       alert("вам начислили 10 звездочек");
- 
+    }else{
+      alert("слишком много символов");
+    }
   } else {
       alert("Заполните все поля!");
   }
