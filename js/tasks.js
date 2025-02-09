@@ -99,12 +99,16 @@ function showResult() {
 
     // Логируем в консоль для отладки
     console.log(`Total Attempts: ${totalAttempts}, Correct Answers: ${correctAnswers}, KD Ratio: ${kdRatio.toFixed(2)}%`);
+    let counter = 0;
+    const counterElement = document.getElementById("counter");
 
     // 🎉 Запускаем конфетти, только если всё правильно
     if (score === questions.length) {
         document.querySelector(".retry-btn").style.display = "none";
         document.querySelector(".exit").style.display = "none";
         document.querySelector(".save").style.display = "flex";
+        counter++;
+        counterElement.textContent = counter;
         launchConfetti();
     }
 }
