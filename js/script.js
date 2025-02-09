@@ -42,7 +42,7 @@ function register() {
     if(name.length <=8){
       sessionStorage.setItem("username", name);  
       window.location.href = "../index.html";  
-      alert("вам начислили 10 звездочек");
+ 
     }else{
       alert("слишком много символов");
     }
