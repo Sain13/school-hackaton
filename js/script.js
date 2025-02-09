@@ -39,7 +39,7 @@ function register() {
   
   if (name && password) {
     console.log(password,name,name.length)
-    if(name.length <=7){
+    if(name.length <=8){
       sessionStorage.setItem("username", name);  
       window.location.href = "../index.html";  
       alert("вам начислили 10 звездочек");
