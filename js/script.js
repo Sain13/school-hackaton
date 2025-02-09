@@ -39,7 +39,7 @@ function register() {
   
   if (name && password) {
       sessionStorage.setItem("username", name);
- 
+      alert("вам начислили 10 звездочек"); 
       window.location.href = "../index.html";  
  
   } else {
