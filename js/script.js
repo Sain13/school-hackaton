@@ -38,6 +38,7 @@ function register() {
  
   
   if (name && password) {
+    console.log(password,name,name.length)
     if(name.length <=7){
       sessionStorage.setItem("username", name);  
       window.location.href = "../index.html";  
