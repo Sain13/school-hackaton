@@ -105,6 +105,23 @@ li a:hover{
   color: #00376B;
  
 }
+.podstar{
+  display: flex;
+  gap: 10px;
+ 
+}
+.menu-header{
+  display: flex;
+  justify-content: center;
+  flex-basis: 60%;
+}
+
+.podstar img{
+  width: 16px;
+  margin-top:3px;
+  height: 16px;
+}
+ 
 .ham6 .top {
   stroke-dasharray: 40 172;
 }
