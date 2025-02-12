@@ -1,15 +1,15 @@
 document.addEventListener("DOMContentLoaded", () => {
     const userNameElement = document.querySelector(".login-text");
-    let cart = document.getElementBuId("carta");
-    
-    if (userNameElement ) {
-        const userNameText = userNameElement.textContent.trim(); // Получаем текст без лишних пробелов
-    
-        // Если текст отличается от "Войти", меняем текст кнопки и ссылку
+    let cart = document.getElementById("carta"); // Исправлено getElementById
+
+    if (userNameElement) {
+        const userNameText = userNameElement.textContent.trim(); // Убираем лишние пробелы
+
+        // Если текст отличается от "Войти" и не пустой, меняем кнопку
         if (userNameText !== "Войти" && userNameText !== "") {
-            cart.del();
-    
- // Устанавливаем правильный обработчик
-        }  
+            if (cart) {
+                cart.remove(); // Удаление элемента
+            }
+        }
     }
-    });
+});
