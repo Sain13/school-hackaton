@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
         // Если текст отличается от "Войти", меняем текст кнопки и ссылку
         if (userNameText !== "Войти" && userNameText !== "") {
             cart.del();
-            startButton.textContent = "Личный кабинет";
+    
  // Устанавливаем правильный обработчик
         }  
     }
