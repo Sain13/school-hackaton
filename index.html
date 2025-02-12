@@ -129,6 +129,21 @@
           <script src="js/sidemenu.js"></script>
           <script src="js/registr.js"></script>
           <script src="js/delCart.js"></script>
+          <script >  document.addEventListener("DOMContentLoaded", () => {
+                    const userNameElement = document.querySelector(".login-text");
+                    const startButton = document.getElementById("qw1");
+                    
+                    if (userNameElement && startButton) {
+                        const userNameText = userNameElement.textContent.trim(); // Получаем текст без лишних пробелов
+                    
+                        // Если текст отличается от "Войти", меняем текст кнопки и ссылку
+                        if (userNameText !== "Войти" && userNameText !== "") {
+                            startButton.textContent = "Личный кабинет";
+                            startButton.onclick = () => window.location.href = "../html/kabinet.html"; // Устанавливаем правильный обработчик
+                        }  
+                    }
+                    });
+          </script>
           <script src="js/count.js">
          </script>
           
