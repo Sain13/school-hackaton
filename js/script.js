@@ -1,10 +1,4 @@
-// появление бутылки 
-const image = document.getElementById('animatedImage');
-setTimeout(() => {
-  image.style.display = 'block';  
-}, Math.random() * (60000 - 30000) + 30000);  
 
- 
 image.addEventListener("click", function() {
   document.getElementById("modal1").style.display = "block";
   image.style.display="none"
